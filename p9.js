@@ -1,6 +1,9 @@
-const capitalFirtLetterFunc=(str)=>{
-  return str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+const factorial=(num)=>{
+    if (num === 0 || num === 1) {
+        return 1;
+    }
+    return num * factorial(num - 1);
 }
 
-const str="hello world";
-console.log(capitalFirtLetterFunc(str));
+const number=5;
+console.log(factorial(number));
